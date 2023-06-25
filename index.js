@@ -2,7 +2,7 @@ let playerWin = 0;
 let computerWin = 0;
 let tie = 0;
 function getComputerChoice(){
-    let computerChoice = ["Rock", "Paper", "Scissors"];
+    let computerChoice = ["rock", "paper", "scissors"];
     let random = Math.floor(Math.random() * computerChoice.length);
     return computerChoice[random];
 }
@@ -15,7 +15,6 @@ function playRound(playerSelection, computerSelection){
     }
     playerSelection = playerSelection.toLowerCase();
     computerSelection = getComputerChoice();
-    computerSelection = computerSelection.toLowerCase();
     console.log(playerSelection,computerSelection);
     if(playerSelection === computerSelection){
         tie++;
